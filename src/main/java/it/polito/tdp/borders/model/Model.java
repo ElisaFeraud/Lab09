@@ -63,10 +63,10 @@ public class Model {
 	 public int getNArchi() {
 		 return grafo.edgeSet().size();
 	 }
-	 public List<String> gradoVertice() {
-		 List<String> gradi = new LinkedList<>(); 
+	 public String gradoVertice() {
+		 String gradi="";
 		 for(Country c: this.grafo.vertexSet()) {
-			 gradi.add(c.getStateNme()+" "+this.grafo.degreeOf(c)+"\n");
+			 gradi +=c.toString()+" "+this.grafo.degreeOf(c)+"\n";
 		 }
 		 return gradi;
 	 }
