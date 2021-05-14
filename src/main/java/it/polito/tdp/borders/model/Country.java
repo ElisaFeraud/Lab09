@@ -1,7 +1,8 @@
 package it.polito.tdp.borders.model;
 
 public class Country {
-   int ccode;
+ 
+int ccode;
    String stateAbb;
    String stateNme;
 public Country(int ccode, String stateAbb, String stateNme) {
@@ -27,5 +28,8 @@ public String getStateNme() {
 public void setStateNme(String stateNme) {
 	this.stateNme = stateNme;
 }
-   
+@Override
+	public String toString() {
+		return  stateNme;
+	}
 }
